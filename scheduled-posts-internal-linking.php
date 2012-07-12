@@ -36,9 +36,11 @@ function es_internal_linking_for_scheduled_posts( $query ) {
 	if ( ! isset( $_POST ) || ! isset( $_POST['action'] ) || 'wp-link-ajax' != $_POST['action'] )
 		return false;
 
-	// Add scheduled posts to the query
+	// Add scheduled posts to the query if it's not there yet
 	$post_status = (array) $query->query_vars['post_status'];
-	$post_status[] = 'future';
+	if ( ! in_array( 'future', $post_status ) )
+		$post_status[] = 'future';
+
 	$query->set( 'post_status', $post_status );
 }
 add_action( 'pre_get_posts', 'es_internal_linking_for_scheduled_posts' );
