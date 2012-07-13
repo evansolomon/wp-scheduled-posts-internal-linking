@@ -3,7 +3,7 @@
 /*
 Plugin Name: Internal Linking for Scheduled Posts
 Description: Add scheudled posts to the internal linking dialog in the WordPress editor.
-Version: 1.0
+Version: 1.01
 Author: Evan Solomon
 Author URI: http://evansolomon.me
 */
