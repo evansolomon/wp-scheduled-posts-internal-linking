@@ -2,7 +2,7 @@
 Contributors: evansolomon
 Tags: internal linking, scheduled posts
 Tested up to: 3.4
-Stable tag: 1.0
+Stable tag: 1.01
 
 A very simple way to add scheduled posts to WordPress' internal linking system.
 
